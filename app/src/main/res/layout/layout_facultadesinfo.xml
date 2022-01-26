@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    android:orientation="vertical"
+    android:padding="4dp"
+    android:background="@drawable/background_border">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="128dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="130dp"
+            android:cropToPadding="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelFacultad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imageView"
+            android:text="Facultad:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtFacultad"
+            android:layout_width="383dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="5dp"
+            android:text="Ciencias de la Ingeniería"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lblDecano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFacultad"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Decano:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDecano"
+            android:layout_width="321dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtFacultad"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="5dp"
+            android:text="Ing. Washington Alberto Chiriboga Casanova"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lblUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDecano"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Ubicación: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtDecano"
+            android:layout_marginLeft="81dp"
+            android:layout_marginTop="5dp"
+            android:text="Campus “La María” - km 7 vía Quevedo-El Empalme"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lblcoord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUbicacion"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Coordenadas: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lbllat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUbicacion"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="5dp"
+            android:text="-1.012214"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/lblray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUbicacion"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="5dp"
+            android:text=","
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/lbllon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUbicacion"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="5dp"
+            android:text="-1.012214"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000" />
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
